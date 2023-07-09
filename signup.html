@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  border: 3px solid black;
+  margin: 40px;
+  padding: 40px;
+}
+
+header, nav, main, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+ nav {
+  padding: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin:100px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+nav ul li a.calculator {
+  background-color: red;
+  color: #fff;
+}
+
+nav ul li a[href="index.html"] {
+  background-color: rgb(173,216,230);
+  border: 2px solid rgb(0,0,139);
+  color: #fff;
+}
+
+nav ul li a[href="calculator.html"] {
+  background-color: #FFCCCB;
+  border: 2px solid rgb(139,0,0);
+  color: #fff;
+  }
+
+nav ul li a[href="signup.html"] {
+  background-color: rgb(173,216,230);
+  border: 2px solid rgb(0,0,139);
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+  <main>
+    <form class="signup-form">
+      <label for="name">Username :</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="email">Password :</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="password">Re-enter Password:</label>
+      <input type="password" id="password" name="password">
+      <br>
+      <input type="submit" value="Signup">
+    </form>
+  </main>
+</body>
+</html>
